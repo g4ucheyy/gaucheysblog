@@ -1,0 +1,171 @@
+/* DECLARING FONTS */
+@font-face {
+    font-family: mc;
+    src: url('mc.ttf');
+} 
+@font-face {
+    font-family: mccrack;
+    src: url('mccrack.ttf');
+} 
+@font-face {
+    font-family: animeacereg;
+    src: url('animeace2_reg.ttf');
+} 
+@font-face {
+    font-family: animeaceital;
+    src: url('animeace2_ital.ttf');
+} 
+@font-face {
+    font-family: animeacebld;
+    src: url('animeace2_bld.ttf');
+} @font-face {
+    font-family: clock;
+    src: url('DS-DIGIB.TTF');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('book.png');
+}
+
+/* LOGO */
+.head {
+    font-family: mccrack;
+    text-align: center;
+    background-image: url('dirt.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px 20px 20px 20px; /* Gives space around the text */
+} 
+
+.head a {
+    text-decoration: none;
+    color: #AAAAAA;
+    -webkit-text-stroke: 1px black; /* Outlines the text letters */
+    font-size: 48px;
+}
+
+/* NAVIGATION BAR */
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #121212;
+}
+
+.menu li a {
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    transition: all 0.4s ease;
+    background-color: #121212;
+    font-family: mc;
+}
+
+.menu li a:hover {
+    color: black;
+    background: linear-gradient(to bottom, #1B120C, #4A7227, #7CBA3D);
+
+}
+
+/* CONTENT */
+.content marquee {
+  background: linear-gradient(to bottom, #031B13, #0A5C3A, #00FF66);
+    border: black 0.4px solid;
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    font-family: animeacebld;
+}
+
+#ico img {
+    border: 2px solid black;
+    max-width: 100%;
+}
+
+/* 3-COLUMN LAYOUT STYLES */
+.column-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    gap: 15px;
+}
+
+
+
+.left-col {
+    width: 25%;
+    border: 4px solid black;
+    text-align: center;
+    background-image: url('bric.png');
+    font-family: animeacebld;
+    
+}
+
+#txt, #txt2 {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #f0f0f0;
+    padding: 5px;
+    border: 1px solid #444;
+    text-decoration: none;
+} #txt2:hover {
+    background: linear-gradient(to bottom, #121417, #0E5135, #00FFCC);
+    transition: all 0.2s;
+    
+
+} 
+
+
+
+.mid-col {
+    width: 50%; /* Keeps its place in the 3-column layout */
+    border: 4px solid black;
+    background-color: whitesmoke;
+    box-sizing: border-box;
+    padding: 10px;
+} .mid-col p {
+    font-size: 17px;
+} 
+
+
+.mid-col h2 {
+    font-family: animeacebld;
+    margin-top: 0;
+}
+
+/* to be used later  */
+.scrollbox {
+    width: 100%; /* Fills the width inside .mid-col */
+  
+    overflow-y: auto; /* Displays scrollbar when text overflows */
+    border: 1px solid #ccc;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.right-col {
+    width: 25%;
+    border: 4px solid black;
+    background-color: whitesmoke;
+
+} .right-col h2 {
+    font-family: animeacebld;
+
+} #clock {
+    font-family: clock;
+    font-size: 44px;
+
+} #btn {
+    padding: 7px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    
+} #quotes {
+    font-family: animeacereg;
+}

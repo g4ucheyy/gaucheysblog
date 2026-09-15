@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chaos Randomizer 0.2</title>
+    <style>
+        .post1-page .column-wrapper {
+            align-items: flex-start;
+        }
+
+        .post1-page .left-col,
+        .post1-page .right-col {
+            flex: 0 0 25%;
+            align-self: flex-start;
+        }
+
+        .post1-page .mid-col {
+            width: 50%;
+            height: 75vh;
+            max-height: 75vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body class="post1-page">
+    <div class="head">
+        <h1><a href="index.html">World Of Gauchey</a></h1>
+    </div>
+    
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="posts.html">Posts</a></li>
+            <li><a href="link.html">Link</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+          <marquee behavior="" direction="right">Welcome to Gauchey's personal blog! Today is <span id="day"></span></marquee>
+        
+        <!-- 3-COLUMN LAYOUT -->
+        <div class="column-wrapper">
+            
+            <!-- LEFT COLUMN: BREAKING NEWS -->
+            <div class="col left-col">
+                <h2 id="txt">BREAKING NEWS!</h2>
+                <p id="txt">Chaos Randomizer 0.2 is out now!! (13/9/2026)</p><br>
+                <a id="txt2" href="post1.html">CLICK HERE</a><br><br>
+                <div id="ico">
+                    <a href="https://github.com/g4ucheyy/chaos-randomizer"><img src="icon.png" alt="icon"></a>
+                </div>
+                <br>
+            </div>
+
+            <!-- MIDDLE COLUMN: MAIN CONTENT -->
+            <div class="col mid-col scrollbox">
+                <h2>CHAOS RANDOMIZER 0.2 !!!</h2>
+                <p>Check this out! I just released a randomizer mod ==> <a href="https://github.com/g4ucheyy/chaos-randomizer/tags">click me</a>  </p>
+                <h2>Whats that?</h2>
+                <p>Chaos Randomizer is a fabric based minecraft java mod featuring randomized modifiers every randomized seconds</p>
+                <p>First version (Chaos Randomizer 0.1) was released in September 6th</p>
+                <p>Current version (Chaos Randomizer 0.2) was released in September 13th</p>
+                <h2>Features</h2>
+
+              
+                    <p>Randomized Modifiers (literally the title)</p>
+                    <p>lists:</p>
+                    <ul>
+                    <li>Random explosions</li>
+                    <li>Shazam! (Lightning bolt, alot of)</li>
+                    <li>Random potion effects with randomized amplifiers</li>
+                    <li>Set a fire around you (hot)</li>
+                    <li>Delivery 4 ya (Mobs, hostile)</li>
+                    <li>Random items (OP sticks)</li>
+                    <li>Levitation</li>
+                </ul>
+                <p>To do (In development)</p>
+                <ul>
+                    <li>Extreme speed</li>
+                    <li>Random drop block whenever u break em</li>
+                    <li>TNT rain?</li>
+                    <li>Extreme slowness?</li>
+                    <li>I forgot</li>
+                </ul>
+
+                <h2>Requirements</h2>
+                <ul>
+                    <li>A device (I guess?)</li>
+                    <li>Minecraft Java 1.21.11 (Fabric)</li>
+                    <li>Enable Allow Command so you can deactivate the mod whenever you want</li>
+                </ul>
+
+                <p>Make sure you download the <code style="background-color: #808080; border-radius: 4px;">chaosrandomizer-0.2.jar</code> to play (the others are for devs I guess)</p>
+
+                <h2>Command</h2>
+                <ul>
+                  <li>/chaos - Shows all available command</li>
+                  <li>/chaos give - gives the sticc boi</li>
+                  <li>/chaos activate - activate the randomizer</li>
+                  <li>/chaos disable - deactivate the randomizer</li>
+                </ul>
+
+                <h2>Screenshots</h2>
+                <center>
+                <img src="image.png" alt="image" width="400px">
+                 </center>
+            </div>
+               <!-- RIGHT COLUMN: MISC / SIDEBAR -->
+            <div class="right-col">
+                <center>
+                <h2>Cool Center</h2>
+                <div id="clock"></div><br><br>
+                <button id="btn"  onclick="randomquotes()">Quote O Mator</button>
+                <p id="quotes"></p>
+                
+            </center>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script>
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const dayEl = document.getElementById("day");
+if (dayEl) {
+  const today = new Date();
+  dayEl.textContent = days[today.getDay()];
+}
+
+function updateClock() {
+    const clockEl = document.getElementById('clock');
+    if (!clockEl) return;
+
+    const now = new Date();
+    clockEl.textContent = now.toTimeString().split(' ')[0];
+  }
+
+  // Run immediately and update every second
+  updateClock();
+  setInterval(updateClock, 1000);
+
+ const quotes = [
+  "u clicked the button",
+  "You summoned me!",
+  "y u click the button lol",
+  "hi hi",
+  "oh wow, u done it",
+  "Minecraft Rule #1: Never dig straight down.",
+  "Error 404: Relationship status not found in database.",
+  "What is a man? A miserable little pile of secrets!",
+  "A creeper hissed behind you. You know the rest.",
+  "It's dangerous to go alone! Take this.",
+  "Git commit -m 'Fixed lonely bug' -> Git push -> Rejected.",
+  "That's a nice house you have there... Shame if something happened to it.",
+  "OOF! *Steve damage sound*",
+  "You are finally awake. You were trying to cross the border, right?",
+  "My heart is open source, but nobody wants to fork it.",
+  "The cake is a lie.",
+  "I refuse to believe it's not a bug. It's a feature.",
+  "Herobrine has been removed from the patch notes.",
+  "Snake? Snake?! SNAAAAAAKE!",
+  "There are 10 types of people: those who understand binary, and those who don't.",
+  "Hey look buddy, I'm an engineer. That means I solve practical problems.",
+  "My love life has a complexity of O(0)—it doesn't even exist.",
+  "I am the man who arranges the blocks.",
+  "Ah shit, here we go again.",
+  "Would you kindly?",
+  "Why did the programmer quit their job? Because they didn't get arrays.",
+  "Automating a 2-minute task in 6 hours is peak efficiency.",
+  "You activated my trap card!",
+  "Your inventory is full.",
+  "I am iron deficiency man.",
+  "My dating profile is just a 500 Internal Server Error page.",
+  "Stay awhile and listen!",
+  "If at first you don't succeed, call it version 1.0.",
+  "You cannot sleep now, there are monsters nearby.",
+  "You missed a semicolon on line 42, your whole life is ruined.",
+  "Sir, this is a Wendy's.",
+  "To clean a computer, just use a sponge block from a ocean monument.",
+  "I am the one who knocks!",
+  "Nanomachines, son!",
+  "Don't waste diamonds on a hoe.",
+  "Show me the motivation!",
+  "The code compiled on the first try. Now I'm terrified.",
+  "Is this the real life? Is this just fantasy?",
+  "My crush is like local host—unreachable from the outside world.",
+  "A redstone repeater can't fix your broken heart.",
+  "Bold of you to assume I have social skills.",
+  "There is no place like 127.0.0.1",
+  "I think I accidentally deleted production.",
+  "Creeper? Aw man.",
+  "Task failed successfully.",
+  "I have a girlfriend. Her name is Visual Studio Code.",
+  "An error occurred while displaying the previous error.",
+  "You died! Score: &e0",
+  "This is peak performance, you may not like it.",
+  "Never gonna give you up, never gonna let you down.",
+  "This line of code is held together by pure willpower and duct tape.",
+  "You cannot fast travel when enemies are nearby.",
+  "That's what she said.",
+  "My variable type is constant: lonely.",
+  "A skeleton shot me out of nowhere.",
+  "I am the danger.",
+  "Ctrl + Z my entire existence, please.",
+  "Autobots, roll out!",
+  "One shall stand, one shall fall.",
+  "Fate has yielded its reward: a new world to call home.",
+  "Megatron must be stopped, no matter the cost.",
+  "I am Optimus Prime, and I send this message to any surviving Autobots taking refuge among the stars.",
+  "More than meets the eye!",
+  "Decepticons, attack!",
+  "Starscream, you have failed me for the last time!",
+  "Bumblebee, stop playing radio songs to express your feelings.",
+  "100+ quotes and counting",
+  "100+ quotes (gluten free)",
+  "Netherite upgrade templates are an absolute scam.",
+  "Building a dirt hut because I lack the creativity to build a mansion.",
+  "Mending is the only enchantment keeping my life from completely breaking down.",
+  "Piglin bartering gave me 20 gravel instead of ender pearls. Great.",
+  "Look at me, I am the captain now.",
+  "Wait, it's all just legacy code? Always has been.",
+  "Understandable, have a great day.",
+  "Am I a joke to you?",
+  "Modern problems require modern solutions.",
+  "Cheems was the ultimate programmer, change my mind.",
+  "Let me out, LET ME OUTTTTTT!",
+  "No thoughts, head empty, code compiling.",
+  "Bro really thinks he's him.",
+  "Stonks only go up.",
+  "Garbage collection just swept away my last remaining brain cell.",
+  "I've got 99 problems, and 98 of them are unclosed HTML tags.",
+  "Code review comments: 'Who wrote this trash?' Spoiler: It was me 3 months ago.",
+  "It works on my machine, so we are deploying my laptop to production.",
+  "Python is basically executable pseudocode, yet I still manage to fail it.",
+  "ChatGPT went down, guess I'll go touch some grass.",
+  "Writing documentation is like writing a letter to a ghost.",
+  "I git pushed directly to main, and now the security team is outside my room.",
+  "Linux users explaining why compiling their browser from scratch for 14 hours is optimal.",
+  "Ah, you have arrived! Make yourself at home."
+];
+
+
+ 
+
+  function randomquotes(){
+
+  const quoteEl = document.getElementById('quotes');
+  if (!quoteEl) return;
+
+  const randomIndex = Math.floor(Math.random() * quotes.length);
+  const randquotes = quotes[randomIndex]; 
+  quoteEl.innerHTML = randquotes;
+}
+
+ 
+
+    </script>
+
+</body>
+</html>
