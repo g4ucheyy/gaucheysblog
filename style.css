@@ -128,7 +128,8 @@ body {
     background-color: whitesmoke;
     box-sizing: border-box;
     padding: 10px;
-} .mid-col p {
+} 
+.mid-col p {
     font-size: 17px;
 } 
 
@@ -141,7 +142,6 @@ body {
 /* to be used later  */
 .scrollbox {
     width: 100%; /* Fills the width inside .mid-col */
-  
     overflow-y: auto; /* Displays scrollbar when text overflows */
     border: 1px solid #ccc;
     padding: 8px;
@@ -156,7 +156,8 @@ body {
 } .right-col h2 {
     font-family: animeacebld;
 
-} #clock {
+}
+ #clock {
     font-family: clock;
     font-size: 44px;
 
@@ -169,3 +170,23 @@ body {
 } #quotes {
     font-family: animeacereg;
 }
+
+        .column-wrapper {
+            align-items: flex-start;
+        }
+
+         .left-col,
+         .right-col {
+            flex: 0 0 25%;
+            align-self: flex-start;
+        }
+
+        .mid-col {
+            width: 50%;
+            height: 75vh;
+            max-height: 75vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            padding: 10px;
+        }

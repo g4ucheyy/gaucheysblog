@@ -5,11 +5,32 @@
     <link rel="icon" href="icon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World of Gauchey</title>
+    <title>Chaos Randomizer 1.0 Is Here!</title>
         <script data-goatcounter="https://gaucheyy.goatcounter.com/count"
             async src="//gc.zgo.at/count.js"></script>
+    <style>
+        .post1-page .column-wrapper {
+            align-items: flex-start;
+        }
+
+        .post1-page .left-col,
+        .post1-page .right-col {
+            flex: 0 0 25%;
+            align-self: flex-start;
+        }
+
+        .post1-page .mid-col {
+            width: 50%;
+            height: 75vh;
+            max-height: 75vh;
+            overflow-y: auto;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+    </style>
 </head>
-<body>
+<body class="post1-page">
     <div class="head">
         <h1><a href="index.html">World Of Gauchey</a></h1>
     </div>
@@ -23,12 +44,12 @@
     </div>
 
     <div class="content">
-        <marquee behavior="" direction="right">Welcome to Gauchey's personal blog! Today is <span id="day"></span></marquee>
+          <marquee behavior="" direction="right">Welcome to Gauchey's personal blog! Today is <span id="day"></span></marquee>
         
         <!-- 3-COLUMN LAYOUT -->
         <div class="column-wrapper">
             
-            <!-- LEFT COLUMN: BREAKING NEWS -->
+              <!-- LEFT COLUMN: BREAKING NEWS -->
             <div class="left-col">
                 <h2 id="txt">BREAKING NEWS!</h2>
                 <p id="txt">[LATEST] Chaos Randomizer 1.0 is out now!! (18/9/2026)</p><br>
@@ -40,21 +61,67 @@
             </div>
 
             <!-- MIDDLE COLUMN: MAIN CONTENT -->
-           <div class="mid-col">
-        <h2>WELCOME :D</h2> 
-        <p>Welcome (again??) to my personal corner of the web! Check out the latest news from me (probably lol)</p>
-        <p>I'm quite lazy but somehow managed to make this blog just for- what for? </p>
-        <p>Yeah, mods... Did you come here for it at the first place?</p>
-        <p>Hey, if you don't mind you can read me ranting about absolutely nothing here :P</p>
-        <code>> sudo apt install girlfriend</code><br>
-        <code style="color: red;">Error: 'girlfriend' does not exist</code>
+            <div class="col mid-col scrollbox">
+                <h2>CHAOS RANDOMIZER 1.0 IS HERE!</h2>
+                <p>The Chaos Randomizer 1.0 update is finally here! Check out the new release and all the chaotic features in this Minecraft mod.</p>
+                <p>Here here here here here ==> <a href="https://github.com/g4ucheyy/chaos-randomizer/releases">click me</a>  </p>
+                <h2>Changes</h2>
+                <p>Mostly minor but here it is for now</p>
+                <ul>
+                    <li>Adding more potion effects for Randomized potion effects modifier (Absorption, Haste, Weakness, Strength, Instant Health, Instant Damage, Saturation)</li>
+                    <li>Adding more mob pool for randomized mob spawns modifier (Wither Skeleton, Blaze, Piglin Brute, Zoglin)</li>
+                    <li>Removed Wither from the mob pool</li>
+                    <li>Changes in durations and amplifiers in Levitation Modifier</li>
+                </ul>
+                <h2>Whats this?</h2>
+                <p>Chaos Randomizer is a fabric based minecraft java mod featuring randomized modifiers every randomized seconds</p>
+                <p>Pre Release (Chaos Randomizer 0.1) was released in September 6th</p>
+                <p>Pre Release (Chaos Randomizer 0.2) was released in September 13th</p>
+                <p>Current Release (Chaos Randomizer 1.0) was released in September 18th</p>
+                <h2>Features</h2>
+              
+                    <p>Randomized Modifiers (literally the title)</p>
+                    <p>lists:</p>
+                    <ul>
+                    <li>Random explosions</li>
+                    <li>Shazam! (Lightning bolt, alot of)</li>
+                    <li>Random potion effects with randomized amplifiers</li>
+                    <li>Set a fire around you (hot)</li>
+                    <li>Delivery 4 ya (Mobs, hostile)</li>
+                    <li>Random items (OP sticks)</li>
+                    <li>Levitation</li>
+                    <li><code style="background: linear-gradient(to bottom, #0B0314, #084236, #39FF14); color: #E2F1EC; padding: 3px;">(NEW)</code> Randomized drops upon breaking items for limited amount of time! (30 seconds)</li>
+                </ul>
+                <p>To do (In development)</p>
+                <ul>
+                    <li>Extreme speed</li>
+                    <li>TNT rain?</li>
+                    <li>Extreme slowness?</li>
+                    <li>I forgot (still am)</li>
+                </ul>
 
-        <p>Hey uhh the names Gauchey (can be Gauche, or even Fries) and I'm pursuing my path to become an employed software developer/engineer (impossible)</p>
+                <h2>Requirements</h2>
+                <ul>
+                    <li>A device (I guess?)</li>
+                    <li>Minecraft Java 1.21.11 (Fabric)</li>
+                    <li>u need fabric loader too but I think its already inside ur launcher</li>
+                    <li>Enable Allow Command so you can deactivate the mod whenever you want</li>
+                </ul>
 
-    </div>
+                <h2>Command</h2>
+                <ul>
+                  <li>/chaos - Shows all available command</li>
+                  <li>/chaos give - gives the sticc boi</li>
+                  <li>/chaos activate - activate the randomizer</li>
+                  <li>/chaos disable - deactivate the randomizer</li>
+                </ul>
 
-
-            <!-- RIGHT COLUMN: MISC / SIDEBAR -->
+                <h2>Screenshots</h2>
+                <center>
+                <p>Error 404, image not found</p>
+                 </center>
+            </div>
+               <!-- RIGHT COLUMN: MISC / SIDEBAR -->
             <div class="right-col">
                 <center>
                 <h2>Clock</h2>
@@ -66,6 +133,7 @@
             </div>
 
         </div>
+
 
     </div>
 
@@ -160,7 +228,7 @@ function updateClock() {
   "I am Optimus Prime, and I send this message to any surviving Autobots taking refuge among the stars.",
   "More than meets the eye!",
   "Decepticons, attack!",
-  "Starscream, you have failed me for the last time!",
+  "Starscream, you have failed me for the last time.",
   "Bumblebee, stop playing radio songs to express your feelings.",
   "100+ quotes and counting",
   "100+ quotes (gluten free)",
@@ -206,5 +274,6 @@ function updateClock() {
  
 
     </script>
+
 </body>
-</html> 
+</html>
